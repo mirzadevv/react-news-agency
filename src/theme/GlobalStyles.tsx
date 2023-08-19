@@ -2,7 +2,6 @@ import { createGlobalStyle } from "styled-components";
 
 const globalStyles = createGlobalStyle`
   * {
-    font-size: 50px;
     margin: 0;
     padding: 0;
   }
@@ -10,6 +9,16 @@ const globalStyles = createGlobalStyle`
   body {
     background-color: ${(props) => props.theme.colors.pageBackground};
     font-family: ${(props) => props.theme.fonts.sora};
+  }
+
+  ul, li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    user-select: none;
+    cursor: pointer;
   }
 `;
 

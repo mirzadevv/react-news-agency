@@ -1,4 +1,6 @@
-const theme = {
+import * as Types from "../types";
+
+const theme: Types.Theme = {
   colors: {
     pageBackground: "#eeebf5",
     lightBlack: "#4c455f",

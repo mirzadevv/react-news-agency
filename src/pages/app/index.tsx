@@ -1,7 +1,7 @@
 import React from "react";
 import * as Styled from "./index.styled";
-import GlobalStyles from "../../theme/GlobalStyles";
 import { ThemeProvider } from "styled-components";
+import GlobalStyles from "../../theme/GlobalStyles";
 import Theme from "../../theme/Theme";
 
 const App: React.FC = () => {
@@ -9,7 +9,7 @@ const App: React.FC = () => {
     <>
       <ThemeProvider theme={Theme}>
         <GlobalStyles />
-        <Styled.Container>App </Styled.Container>
+        <Styled.Container></Styled.Container>
       </ThemeProvider>
     </>
   );
