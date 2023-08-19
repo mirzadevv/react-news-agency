@@ -10,17 +10,22 @@ export const UL = styled.ul<ULProps>`
       return `
       position: absolute;
       top: 120%;
-      padding: 10px;
-      width: calc(100% - 20px);
+      display:flex;
+      flex-direction: column;
+      row-gap:30px;
+      padding: 30px 20px;
+      width: calc(100% - 40px);
       background-color: #fff;
       box-shadow: 2px 2px 4px gray;
+      li {
+        text-align:left;
+      }
       `;
     } else {
       return `
       display: flex;
       align-items: center;
-      column-gap: 30px;
-      row-gap: 10px;
+      column-gap: 35px;
       flex-wrap: wrap;
       `;
     }

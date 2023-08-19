@@ -15,12 +15,16 @@ export default function Navbar(): JSX.Element {
   return (
     <Styled.Container>
       <Styled.Nav>
-        <ImageWithReactIcon type="image" src={navbarLogoImg} />
+        <ImageWithReactIcon
+          type="image"
+          src={navbarLogoImg}
+          className="logo-image"
+        />
 
-        <Styled.navListContainer>
+        <Styled.NavListContainer>
           <NavbarMenu />
           <NavbarAuthentication />
-        </Styled.navListContainer>
+        </Styled.NavListContainer>
 
         <ImageWithReactIcon
           type="icon"

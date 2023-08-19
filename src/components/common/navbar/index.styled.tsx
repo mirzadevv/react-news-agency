@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  margin: 20px;
-  padding: 10px;
+  font-size: large;
   a {
     color: ${(props) => props.theme.colors.darkBlack};
     font-weight: 500;
@@ -18,6 +17,13 @@ export const Nav = styled.nav`
     display: none;
   }
 
+  .logo-image {
+    width: 10%;
+    display: flex;
+    justify-content: left;
+    margin-right: 30px;
+  }
+
   @media (max-width: 1300px) {
     .burger-icon {
       display: flex;
@@ -26,14 +32,20 @@ export const Nav = styled.nav`
       cursor: pointer;
     }
   }
+
+  @media (max-width: 400px) {
+    justify-content: right;
+    .logo-image {
+      display: none;
+    }
+  }
 `;
 
-export const navListContainer = styled.div`
+export const NavListContainer = styled.div`
   width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
 
   @media (max-width: 1300px) {
     display: none;
