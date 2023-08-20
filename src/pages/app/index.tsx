@@ -1,4 +1,5 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import GlobalStyles from "../../theme/GlobalStyles";
 import { ThemeProvider } from "styled-components";
 import Header from "../../components/header";
@@ -15,6 +16,7 @@ export default function App() {
           <Header />
         </Styled.Container>
       </ThemeProvider>
+      <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>
   );
 }
