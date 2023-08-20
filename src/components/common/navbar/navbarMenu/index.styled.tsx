@@ -5,6 +5,11 @@ type ULProps = {
 };
 
 export const UL = styled.ul<ULProps>`
+  li a {
+    &:hover {
+      color: ${(props) => props.theme.colors.purple};
+    }
+  }
   ${(props) => {
     if (props.verticalAlignment) {
       return `
