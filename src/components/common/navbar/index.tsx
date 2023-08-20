@@ -10,7 +10,7 @@ import NavbarAuthentication from "./navbarAuthentication";
 import NavbarMenu from "./navbarMenu";
 import ImageWithReactIcon from "../imageWithReactIcon";
 
-export default function Navbar(): JSX.Element {
+export default function Navbar() {
   const [burgerMenuMode, setBurgerMenuMode] = useState<boolean>(false);
   return (
     <Styled.Container>

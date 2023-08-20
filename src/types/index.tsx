@@ -1,4 +1,4 @@
-import { QueryFunctionContext } from "react-query";
+import { QueryFunctionContext } from "@tanstack/react-query";
 
 export type Theme = {
   [key: string]: {

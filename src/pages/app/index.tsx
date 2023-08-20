@@ -1,14 +1,12 @@
-import React from "react";
-import * as Styled from "./index.styled";
-import { QueryClient, QueryClientProvider } from "react-query"; // Import React Query modules
-import { ThemeProvider } from "styled-components";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import GlobalStyles from "../../theme/GlobalStyles";
-import Theme from "../../theme/Theme";
+import { ThemeProvider } from "styled-components";
 import Header from "../../components/header";
+import * as Styled from "./index.styled";
+import Theme from "../../theme/Theme";
 
-const queryClient = new QueryClient();
-
-const App: React.FC = () => {
+export default function App() {
+  const queryClient = new QueryClient();
   return (
     <QueryClientProvider client={queryClient}>
       <ThemeProvider theme={Theme}>
@@ -19,6 +17,4 @@ const App: React.FC = () => {
       </ThemeProvider>
     </QueryClientProvider>
   );
-};
-
-export default App;
+}
