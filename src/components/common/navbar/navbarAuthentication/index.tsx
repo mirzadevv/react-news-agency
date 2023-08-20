@@ -7,7 +7,7 @@ export default function NavbarAuthentication() {
         <a>Login</a>
       </li>
       <li>
-        <a>Subscribe</a>
+        <a className="subscribe-menu-item">Subscribe</a>
       </li>
     </Styled.Container>
   );
