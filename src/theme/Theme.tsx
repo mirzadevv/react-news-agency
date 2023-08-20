@@ -5,7 +5,7 @@ const theme: Types.Theme = {
     pageBackground: "#eeebf5",
     lightBlack: "#4c455f",
     darkBlack: "#26222f",
-    purple: "#805aed",
+    purple: "#8100ea",
   },
   fonts: {
     inter: "Inter, sans-serif",
