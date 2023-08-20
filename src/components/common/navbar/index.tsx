@@ -7,8 +7,8 @@ import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
 
 // import components
 import NavbarAuthentication from "./navbarAuthentication";
-import NavbarMenu from "./navbarMenu";
 import ImageWithReactIcon from "../imageWithReactIcon";
+import NavbarMenu from "./navbarMenu";
 
 export default function Navbar() {
   const [burgerMenuMode, setBurgerMenuMode] = useState<boolean>(false);
@@ -19,6 +19,7 @@ export default function Navbar() {
           type="image"
           src={navbarLogoImg}
           className="logo-image"
+          size={80}
         />
 
         <Styled.NavListContainer>
