@@ -22,6 +22,10 @@ export const Nav = styled.nav`
     display: flex;
     justify-content: left;
     margin-right: 30px;
+
+    img {
+      margin-left: -15px;
+    }
   }
 
   @media (max-width: 1300px) {
