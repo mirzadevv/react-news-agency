@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   font-size: large;
+  margin-bottom: 100px;
+
   a {
     color: ${(props) => props.theme.colors.darkBlack};
     font-weight: 500;

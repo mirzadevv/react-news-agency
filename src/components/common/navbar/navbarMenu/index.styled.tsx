@@ -5,9 +5,12 @@ type ULProps = {
 };
 
 export const UL = styled.ul<ULProps>`
-  li a {
+  li {
     &:hover {
-      color: ${(props) => props.theme.colors.purple};
+      a {
+        color: ${(props) => props.theme.colors.purple};
+        text-decoration: underline;
+      }
     }
   }
   ${(props) => {
@@ -22,6 +25,7 @@ export const UL = styled.ul<ULProps>`
       width: calc(100% - 40px);
       background-color: #fff;
       box-shadow: 2px 2px 4px gray;
+      z-index:100;
       li {
         text-align:left;
       }
