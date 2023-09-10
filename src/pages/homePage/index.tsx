@@ -1,9 +1,10 @@
 import * as Styled from "./index.styled";
+import HeroSection from "../../components/heroSection";
 
 export default function HomePage() {
   return (
     <Styled.Container>
-      <h2>Home Page</h2>
+      <HeroSection />
     </Styled.Container>
   );
 }
